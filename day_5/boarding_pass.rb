@@ -39,17 +39,6 @@ def walk_tree(directions, tree, low_indicator, up_indicator)
   find_it.lower # lower and upper are the same value for end nodes.
 end
 
-# empty_seats = []
-# def find_missing(tree)
-#   if tree.next_lower == nil
-#     empty_seats << tree unless tree.taken
-#     return
-#   end
-
-#   find_missing(tree.next_lower)
-#   find_missing(tree.next_upper)
-# end
-
 def seat_id(row, col)
   row * 8 + col
 end
